@@ -1,0 +1,78 @@
+a.navbar-brand{
+	margin-left:10px;
+}
+
+div.photo_album_heading{
+	float:right;
+	padding-right:0.5em;
+	padding-top:0.5em;
+}
+
+div.heading_image{
+	/*padding:5px;*/
+}
+
+div.image_display{
+	position:relative;
+	height:48%;
+	width:50%;
+	overflow:visible;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	width:100%;
+	flex: 0 auto;
+}
+
+img.sample_image{
+	object-fit:contain;
+	width:300px;
+	height:300px;
+}
+
+div.image_display div.detail_item{
+	position:relative;
+	width:500px;
+	height:300px;
+}
+
+div.label_container{
+	
+	display:grid;
+	grid-template-columns:25% 75%;
+}
+
+div.label_container textarea{
+	height:100px;
+}
+
+div.label_container textarea,
+div.label_container input{
+	width:150px;
+	font-size:0.8em;
+	border-radius:5px;
+	border-color:darkgray;
+}
+
+div.label_container textarea:focus,
+div.label_container input:focus{
+	background-color:lightgray;
+}
+
+div.label_container :first-child{
+	grid-column:1/ span 2;
+}
+
+div.label_container > :not(div:first-child){
+	padding-top:5px;
+}
+
+.text-muted[name^="images/"],
+div.label_container span[name^="images/"]{
+	font-style:italic;
+}
+
+div.updatedTextItem{
+	color:red;
+}
+
